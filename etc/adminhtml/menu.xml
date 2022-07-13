@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="ChintakExtensions_Special::list" title="Special Request" module="ChintakExtensions_Special" sortOrder="99" resource="ChintakExtensions_Special::list"/>
+
+    	<add id="ChintakExtensions_Special::add_row" title="Special Request" module="ChintakExtensions_Special" sortOrder="20" parent="ChintakExtensions_Special::list" action="special/items" resource="ChintakExtensions_Special::add_row"/>
+
+        <add id="ChintakExtensions_Special::configuration" title="Configuration" module="ChintakExtensions_Special" sortOrder="99" parent="ChintakExtensions_Special::list" action="adminhtml/system_config/edit/section/special" resource="ChintakExtensions_Special::add_row"/>
+    </menu>
+</config>

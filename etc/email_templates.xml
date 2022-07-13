@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Email/etc/email_templates.xsd">
+    <template id="special_email_template_admin" label="Special Request Form" file="special_admin_template.html" type="html" module="ChintakExtensions_Special" area="frontend"/>
+    <template id="special_email_template_front" label="Special Request Form" file="special_front_email_template.html" type="html" module="ChintakExtensions_special_list_data_source_Special" area="frontend"/>
+</config>

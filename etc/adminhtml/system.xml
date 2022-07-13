@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="special" translate="label" sortOrder="105">
+            <label>Special Request</label>
+        </tab>
+        <section id="special" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>special</tab>
+            <resource>ChintakExtensions_Special::special_config</resource>
+             <group id="email" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Email Options</label>
+                <field id="special_recipient_email" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Send Emails To</label>
+                    <validate>validate-email required-entry</validate>
+                </field>
+                <field id="copy_to" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Send Special Request Inquiry Us Email Copy To</label>
+                </field>
+                <field id="special_sender_email_identity" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Sender</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Identity</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="ChintakExtensions\Special\Api\Data\SpecialInterface" type="ChintakExtensions\Special\Model\Special" />
+
+    <virtualType name="ChintakExtensions\Special\Model\ResourceModel\Special\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">chintakextensions_special</argument>
+            <argument name="resourceModel" xsi:type="string">ChintakExtensions\Special\Model\ResourceModel\Special</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="chintakextensions_special_list_data_source" xsi:type="string">ChintakExtensions\Special\Model\ResourceModel\Special\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

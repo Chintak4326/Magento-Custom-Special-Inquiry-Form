@@ -1,0 +1,32 @@
+<!--@subject {{trans "Special Request Enqury from Chintak Extensions"}}  @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table class="message-details">
+    <tr>You have got a Special Request, Please find below details:</tr>
+    <tr>
+        <td><strong>{{trans "Full Name"}}</strong></td>
+        <td>{{var fname}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Email"}}</strong></td>
+        <td>{{var email}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Mobile Number"}}</strong></td>
+        <td>{{var mobile}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Subject"}}</strong></td>
+        <td>{{var subject}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Message"}}</strong></td>
+        <td>{{var message}}</td>
+    </tr>
+</table>
+
+
+{{template config_path="design/email/footer_template"}}
